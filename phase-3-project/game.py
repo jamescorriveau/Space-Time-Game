@@ -1,9 +1,12 @@
 
+# Define the Game class to manage the game.
 class Game:
     def __init__(self, player):
+        # Initializes the game.
         self.player = player
 
     def start_adventure(self):
+        # Begin the game.
         print(f"Welcome, Commander {self.player.name}, to your space mission!")
         self.choose_spaceship()
 
@@ -131,6 +134,7 @@ class Game:
             print("In a matter of seconds, the ship explodes into pieces, ending the mission in a catastrophic fashion.")
             self.game_over("Mission ended due to a catastrophic ship explosion during scanning.")
 
+    # Display a game over message with the option to play again.
     def game_over(self, reason=""):
         complete_message = f"Thank you for your bravery, Commander {self.player.name}."
         if reason:
@@ -153,6 +157,7 @@ class Game:
         self.start_adventure()
 
     def get_decision(self, prompt, valid_choices):
+        # Get a player's decision from a list of valid choices.
         while True:
             decision = input(prompt).lower()
             if decision in valid_choices:

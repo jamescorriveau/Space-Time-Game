@@ -1,6 +1,8 @@
 from player import Player
 from game import Game
 
+# Main function to start the game.
+
 def main():
     name = input("Type your astronaut name: ")
     player = Player(name)
@@ -9,4 +11,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
