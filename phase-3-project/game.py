@@ -164,6 +164,3 @@ class Game:
                 return decision
             else:
                 print(f"Invalid command. Please choose one of the following: {', '.join(valid_choices)}.")
-
-
-
