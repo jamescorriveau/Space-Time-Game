@@ -1,3 +1,5 @@
+# player.py
+
 # Define the Player class for the player in the game.
 class Player:
     def __init__(self, name):
